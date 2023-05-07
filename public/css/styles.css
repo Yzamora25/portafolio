@@ -12,14 +12,14 @@ body.dark-mode {
 
 .escribiendo {
   color: #1e8187;
-  display: block;
+  display: inline-block;
   font-family: monospace;
   white-space: nowrap;
   border-right: 4px solid;
   font-size: 35px;
   font-weight: bold;
-  animation: typing 5s steps(12) infinite, blink 1s infinite step-end alternate;
   overflow: hidden;
+  animation: typing 5s steps(24) infinite, blink 1s infinite step-end alternate;
 }
 
 @keyframes typing {
@@ -36,6 +36,7 @@ body.dark-mode {
     border-color: transparent;
   }
 }
+
 
 @media (max-width: 768px) {
   .escribiendo {
