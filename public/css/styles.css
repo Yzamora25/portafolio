@@ -1,0 +1,95 @@
+
+.active {
+  border-bottom: 4px solid #03b9b9;
+}
+.navbar-toggler {
+  color: #03b9b9;
+}
+body.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.escribiendo {
+  color: #1e8187;
+  display: block;
+  font-family: monospace;
+  white-space: nowrap;
+  border-right: 4px solid;
+  font-size: 35px;
+  font-weight: bold;
+  animation: typing 5s steps(12) infinite, blink 1s infinite step-end alternate;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@media (max-width: 768px) {
+  .escribiendo {
+    font-size: 20px;
+  }
+}
+
+.icono {
+  /* efecto marmol y usando el color #00A8A8 */
+  color: #ffffff;
+  background: #00a8a8;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 #00a8a8;
+  transform: scale(1);
+  animation: pulse 2s infinite;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  -webkit-animation: pulse 2s infinite;
+  -moz-animation: pulse 2s infinite;
+  -o-animation: pulse 2s infinite;
+  animation: pulse 2s infinite;
+}
+
+/* hover #cccccc */
+.icono:hover {
+  color: #ffffff;
+  background: #028b8b;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 #cccccc;
+  transform: scale(1);
+  animation: pulse 2s infinite;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  -webkit-animation: pulse 2s infinite;
+  -moz-animation: pulse 2s infinite;
+  -o-animation: pulse 2s infinite;
+  animation: pulse 2s infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 168, 168, 0.7);
+  }
+  70% {
+    -webkit-transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0, 168, 168, 0);
+  }
+  100% {
+    -webkit-transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 168, 168, 0);
+  }
+}

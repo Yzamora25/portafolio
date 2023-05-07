@@ -1,0 +1,55 @@
+body.dark-mode {
+  background-color: #000000 !important;
+  color: #fff;
+}
+
+.form-check {
+      perspective: 1000px;
+    }
+
+    .form-check-label {
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.3s;
+    }
+
+    .form-check-label::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(39, 39, 39, 0.1);
+      transform-origin: right center;
+      transform: rotateY(-90deg);
+      transition: transform 0.3s;
+      pointer-events: none;
+    }
+
+    .form-check-input:checked + .form-check-label {
+      transform: translateZ(-10px);
+    }
+
+    .form-check-input:checked + .form-check-label::before {
+      transform: rotateY(0deg);
+    }
+
+    .form-check-input {
+      display: none;
+    }
+
+    .bi {
+      font-size: 24px;
+    }
+
+    .bi-moon,
+    .bi-sun {
+      transition: opacity 0.3s;
+      opacity: 0.5;
+    }
+
+    .dark-mode .bi-moon,
+    .dark-mode .bi-sun {
+      opacity: 1;
+    }
